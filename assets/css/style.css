@@ -1,0 +1,746 @@
+@font-face {
+  font-family: Gotham-med;
+  src: url(../fonts/GothamSSm-Medium.woff2);
+}
+@font-face {
+  font-family: Gotham-light;
+  src: url(../fonts/GothamSSm-Light.woff2);
+}
+@font-face {
+  font-family: Gotham-book;
+  src: url(../fonts/GothamSSm-Book.woff2);
+}
+@font-face {
+  font-family: Gotham-bld;
+  src: url(../fonts/GothamSSm-Bold.woff2);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.html {
+}
+/* header nav bar  first page*/
+body {
+  /* background-color: black; */
+}
+.head-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  padding: 7px 30px 0 30px;
+  /* display: inline-block;
+  text-align: center; */
+  fill: #fff;
+  cursor: pointer;
+  position: relative;
+  flex-flow: row wrap;
+  /* height: 20px; */
+  /* top: 10px; */
+}
+
+.page .head-container .right-nav > ul,
+.page .head-container .middle-nav > ul {
+  font-size: 14px;
+}
+.logo-tesla {
+  width: 120px;
+  margin-right: 80px;
+  margin-left: 20px;
+}
+
+.middle-nav ul {
+  list-style: none;
+  font-family: Gotham-med, "Montserrat", sans-serif;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  /* font-size: 12px; */
+  font-weight: 500;
+  color: white;
+}
+.middle-nav ul li {
+  padding: 10px;
+  margin: 0 5px;
+  transition: 0.4s;
+}
+.middle-nav a {
+  text-decoration: none;
+  color: inherit;
+}
+.middle-nav ul li:hover {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.right-nav ul {
+  max-height: 100%;
+  list-style: none;
+  font-family: Gotham-med, "Montserrat", sans-serif;
+  display: flex;
+  /* align-content: right; */
+  justify-content: end;
+  /* font-size: 12px; */
+  padding: 0 10px;
+  font-weight: 500;
+  color: white;
+}
+
+.right-nav ul li {
+  padding: 10px;
+  margin: 0 5px;
+  max-height: 100%;
+}
+.right-nav a {
+  text-decoration: none;
+  color: inherit;
+}
+.right-nav ul li:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.side-bar {
+  display: inline-block;
+  position: fixed;
+  margin-left: 20px;
+  margin-top: 355px;
+  width: 50px;
+  z-index: 30;
+}
+.side-btn-link {
+  color: white;
+  font-family: Gotham-med, "Montserrat", sans-serif;
+  font-size: 11px;
+  margin-left: 5px;
+  position: relative;
+  bottom: 10px;
+  display: none;
+}
+
+.side-bar:active .sbtn-link:active {
+  color: white;
+}
+.side-bar a {
+  text-decoration: none;
+}
+.side-bar ul {
+  list-style: none;
+}
+
+.sbtn-link {
+  width: 350px;
+  cursor: pointer;
+  padding-left: 8px;
+}
+.side-btn-active {
+  background-color: white;
+  width: 3px;
+  height: 24px;
+  border: none;
+}
+.sbtn-link:hover .side-btn-link {
+  display: inline-block;
+}
+
+.side-btn {
+  background-color: white;
+  width: 1px;
+  height: 24px;
+  border: none;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+  font-family: Gotham-book, "Montserrat", sans-serif;
+  color: white;
+  align-content: center;
+  /* font-weight: bold; */
+  font-size: 20px;
+}
+.page {
+  height: 100vh;
+  /* scroll-snap-align: start;
+   */
+  /* overflow: hidden; */
+  padding: 3px 0;
+  /* overflow: hidden; */
+}
+
+.page-1 {
+  background: url("../images/Model-3-Main.jpg") no-repeat center center/cover;
+}
+
+.stats {
+  display: flex;
+
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: end;
+  position: relative;
+  bottom: 12vh;
+  max-width: 100%;
+  height: 100%;
+  font-size: 30px;
+  padding: 0 30px;
+}
+
+.gauge {
+  display: inline-block;
+  max-width: 100%;
+  align-items: center;
+  /* margin: 0 20px; */
+}
+
+.gauge h2 {
+  /* display: flex; */
+  /* margin: 0px; */
+  position: relative;
+  left: 20px;
+  letter-spacing: 0.3em;
+}
+.main-content h2 {
+  display: flex;
+  margin: 0 40px;
+  /* position: absolute; */
+}
+.main-content small {
+  display: flex;
+  margin: 10px 30px 0 40px;
+}
+.main-content img {
+  display: flex;
+  /* margin: 0 0 0px; */
+  width: 50px;
+  position: absolute;
+  left: 40px;
+  top: -4px;
+}
+.main-content {
+  position: absolute;
+  color: white;
+  font-family: Gotham-book, "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  font-size: 16px;
+  bottom: -35px;
+  /* justify-content: space-between; */
+}
+
+.btn-main a {
+  text-decoration: none;
+  border: 3px solid white;
+  padding: 7px 50px;
+  border-radius: 5px;
+  color: white;
+  transition: 0.5s;
+  position: relative;
+  bottom: 5px;
+  left: 30px;
+}
+.btn-main:hover a {
+  text-decoration: none;
+  border: 3px solid white;
+  background-color: white;
+  padding: 7px 50px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+}
+
+@media all and (max-width: 768px) {
+  .page1 {
+    position: relative;
+  }
+  .title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 11vh;
+  }
+  .btn-main {
+    position: absolute;
+    bottom: -7vh;
+  }
+  .main-content {
+    position: absolute;
+    bottom: 0;
+    /* margin: 0 100px; */
+  }
+
+  .side-bar {
+    position: fixed;
+  }
+}
+
+/* Page 2 */
+
+/* .page-2 {
+  height: 100vh;
+  
+  scroll-snap-align: always;
+} */
+.page2 {
+  background-color: #f2f2f2;
+}
+.page2-container {
+  display: flex;
+  position: relative;
+}
+
+.side-article {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 100vh;
+  text-align: left;
+  line-height: 1.3em;
+  position: relative;
+  top: 6vh;
+  /* right: -10vh; */
+}
+
+.side-article h4 {
+  font-family: "Gotham-Light";
+  font-weight: 100;
+}
+.side-article h2 {
+  font-family: "Gotham-Light";
+  font-weight: 600;
+  font-size: 26px;
+}
+.side-article p {
+  font-family: "Gotham-book";
+  font-size: 14px;
+}
+.side-article a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid black;
+  transition: 0.15s;
+}
+.side-article a:hover {
+  border-bottom: 2px solid black;
+}
+
+.safety-main img {
+  /* object-fit: cover; */
+  /* width: 1000px; */
+  height: 800px;
+  /* object-fit: scale-down; */
+}
+.safety-main:after img:after {
+}
+
+.safety-main {
+  position: relative;
+  left: -8vh;
+  /* top: -3vh; */
+  margin-top: 20px;
+}
+
+.order-main {
+  display: flex;
+  position: absolute;
+  right: 10vh;
+  bottom: 5vh;
+  padding: 0 20px;
+}
+.order-main span {
+  padding: 0 10px 0 8px;
+  font-family: "Gotham-med";
+  font-size: 14px;
+  margin: auto;
+  font-weight: 400;
+}
+
+.order {
+  background-color: transparent;
+  font-family: "Gotham-light";
+  font-size: 14px;
+  cursor: pointer;
+}
+.order a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.order-now {
+  padding: 5px 70px;
+  border-width: 3px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.order-now:hover {
+  color: white;
+  background-color: black;
+}
+.order-plus {
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.order-plus:hover {
+  color: white;
+  background-color: black;
+}
+
+@media all and (max-width: 768px) {
+  .page2 {
+    position: relative;
+    /* height: 100vh; */
+  }
+
+  .safety-main img {
+    /* position: absolute; */
+    height: 400px;
+  }
+  .safety-main {
+    /* height: 500px; */
+  }
+  .side-article {
+    display: flex;
+    position: absolute;
+    top: 47vh;
+    /* left: 5vh; */
+    /* width: 60vh; */
+    margin-left: 40px;
+  }
+  .order-main {
+    position: absolute;
+    bottom: -40vh;
+    left: 10px;
+    padding: 0;
+
+    margin: 0 0 0 50px;
+  }
+  .order-main span {
+    margin: 2vh 1vh 0;
+    /* position: absolute; */
+    /* left: 20px; */
+  }
+  .main-content2 {
+    margin: 0px 0 8px 8px;
+  }
+}
+
+/* Page 3 */
+.page3 {
+  display: flex;
+  justify-content: center;
+
+  align-items: end;
+
+  background: url("../images/Model-3-Performance-Hero-Desktop-LHD.jpg")
+    no-repeat center center/cover;
+  height: 73.8vh;
+  position: relative;
+}
+
+.gauge2 {
+  /* display: inline-block; */
+  max-width: 100%;
+  align-items: center;
+  /* margin: 0 20px; */
+}
+.gauge2 small {
+  display: inline-block;
+  max-width: 100%;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.gauge2 h2 {
+  /* display: flex; */
+  /* margin: 0px; */
+  position: relative;
+  left: 70px;
+  letter-spacing: 0.3em;
+}
+
+.main-content2 h2 {
+  display: flex;
+  margin: 0 20px;
+  /* position: absolute; */
+}
+.main-content2 small {
+  /* display: flex; */
+
+  /* margin: 10px 30px 0 40px; */
+}
+.main-content2 img {
+  display: flex;
+  /* margin: 0 0 0px; */
+  width: 50px;
+  position: absolute;
+  left: 90px;
+  top: -4px;
+}
+.main-content2 {
+  /* position: absolute; */
+  /* flex-wrap: wrap; */
+  color: white;
+  font-family: Gotham-book, "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+  padding: 0 30px;
+  font-size: 16px;
+
+  bottom: -35px;
+  /* justify-content: space-between; */
+}
+.stats2 {
+  display: flex;
+
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: end;
+  position: relative;
+  bottom: 12vh;
+  max-width: 100%;
+  height: 100%;
+  font-size: 30px;
+  padding: 0 30px;
+}
+.item-b {
+  margin: 0 20px;
+}
+.item-b h2 {
+  position: relative;
+  left: 50px;
+}
+.item-b small {
+  margin: 10px 0;
+}
+
+/* .bottom-page3 
+  background-color: white;
+  display: gri;
+  justify-content: center;
+  /* width: 100%; */
+/* height: 45vh; */
+.bottom-section-right {
+  /* float: flex; */
+  width: 63%;
+}
+.bottom-section {
+  text-align: left;
+  margin: 50px 300px;
+  display: flex;
+  /* padding: 50px 310px; */
+  position: relative;
+  left: 90px;
+  right: -50px;
+}
+
+.bottom-section-left {
+  /* float: flex; */
+  /* width: 33%; */
+  line-height: 30px;
+  margin-right: 90px;
+}
+.bottom-section h4 {
+  font-family: "Gotham-Light";
+  font-weight: 100;
+}
+
+.bottom-section h2 {
+  font-family: "Gotham-Light";
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.bottom-section p {
+  font-family: "Gotham-Book";
+  font-size: 14px;
+  color: gray;
+}
+
+.order3 {
+  background-color: transparent;
+  font-family: "Gotham-light";
+  font-size: 14px;
+  cursor: pointer;
+}
+.order3 a {
+  text-decoration: none;
+  color: inherit;
+}
+.order3-plus {
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.order3-plus:hover {
+  color: white;
+  background-color: black;
+}
+.order3-now {
+  padding: 5px 60px;
+  border-width: 3px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.order3-now:hover {
+  color: white;
+  background-color: black;
+}
+.order-main3 {
+  color: darkgrey;
+  margin-top: 10%;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  /* display: flex; */
+}
+.order-main3 span {
+  color: rgb(134, 134, 134);
+  margin-top: 10%;
+  font-size: 14px;
+  /* letter-spacing: 0.1em; */
+  font-family: "gotham-med";
+}
+.mobile-text {
+  display: none;
+}
+.mobile-text2 {
+  display: none;
+}
+.mobile-text3 {
+  display: none;
+}
+
+/* .item-b2 h2 {
+  margin: 2px 0px;
+}
+.item-b3 h2 {
+  margin: 2px 0px;
+} */
+
+@media all and (max-width: 768px) {
+  .page3 {
+    position: relative;
+  }
+  .desk-text {
+    display: none;
+  }
+  .desk-text2 {
+    display: none;
+  }
+  .desk-text3 {
+    display: none;
+  }
+  .mobile-text {
+    display: flex;
+
+    position: absolute;
+    bottom: 16vh;
+    left: 0vh;
+    white-space: nowrap;
+  }
+  .mobile-text2 {
+    display: flex;
+
+    position: absolute;
+    bottom: 16vh;
+    left: -2vh;
+    /* right: 0vh; */
+    white-space: nowrap;
+  }
+  .mobile-text3 {
+    display: flex;
+
+    position: absolute;
+    bottom: 16vh;
+    left: -5vh;
+    /* right: 0vh; */
+    white-space: nowrap;
+  }
+  .stats2 {
+    position: absolute;
+    left: 0;
+    bottom: 5vh;
+  }
+  .main-content2 {
+    display: flex;
+    position: absolute;
+    bottom: -3vh;
+    left: 5vh;
+    /* width: 60vh; */
+    /* margin-left: 40px; */
+  }
+  .main-content2 > img {
+    position: absolute;
+    top: calc(-21vh + 2px);
+    left: 10vh;
+    /* bottom: -20vh; */
+  }
+  .gauge2 {
+    position: absolute;
+  }
+  .item-b {
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    position: relative;
+    left: 2vh;
+    bottom: 20vh;
+  }
+
+  .item-b small {
+    /* display: flex; */
+    /* align-items: end; */
+    /* justify-content: end; */
+    position: absolute;
+    left: 10vh;
+    bottom: -20vh;
+  }
+
+  .bottom-section {
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 45vh;
+  }
+  .bottom-section-left {
+    position: absolute;
+    top: 10px;
+  }
+  .bottom-section-right {
+    position: absolute;
+    top: 13vh;
+  }
+  .order-main3 {
+    position: relative;
+    bottom: -25vh;
+    left: -7vh;
+    padding: 0;
+    display: flex;
+
+    margin: 0 0 0 50px;
+  }
+  .order-main3 span {
+    margin: 2vh 1vh 0;
+    /* position: absolute; */
+    left: 20px;
+  }
+}
+
+.fullpage {
+  width: 100%;
+  overflow-x: hidden;
+}
