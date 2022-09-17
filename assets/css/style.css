@@ -73,6 +73,7 @@ body {
   text-decoration: none;
   color: inherit;
 }
+
 .middle-nav ul li:hover {
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -103,6 +104,7 @@ body {
 .right-nav ul li:hover {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
+  /* filter: blur(10); */
 }
 
 .side-bar {
@@ -239,19 +241,19 @@ body {
 .btn-main a {
   text-decoration: none;
   border: 3px solid white;
-  padding: 7px 50px;
+  padding: 7px 100px;
   border-radius: 5px;
   color: white;
   transition: 0.5s;
   position: relative;
   bottom: 5px;
-  left: 30px;
+  left: 0px;
 }
 .btn-main:hover a {
   text-decoration: none;
   border: 3px solid white;
   background-color: white;
-  padding: 7px 50px;
+  padding: 7px 100px;
   border-radius: 5px;
   color: rgb(0, 0, 0);
 }
@@ -260,6 +262,16 @@ body {
   .page1 {
     position: relative;
   }
+  .middle-nav {
+    display: none;
+  }
+  .side-bar {
+    display: none;
+  }
+  .right-nav span {
+    display: none;
+  }
+
   .title {
     position: absolute;
     left: 0;
@@ -272,6 +284,7 @@ body {
     position: absolute;
     bottom: -7vh;
   }
+
   .main-content {
     position: absolute;
     bottom: 0;
@@ -417,19 +430,19 @@ body {
     /* left: 5vh; */
     /* width: 60vh; */
     margin-left: 40px;
+    max-width: 90%;
   }
   .order-main {
     position: absolute;
     bottom: -40vh;
     left: 10px;
     padding: 0;
-
+    max-width: 70%;
     margin: 0 0 0 50px;
   }
   .order-main span {
     margin: 2vh 1vh 0;
-    /* position: absolute; */
-    /* left: 20px; */
+    max-width: 70%;
   }
   .main-content2 {
     margin: 0px 0 8px 8px;
@@ -686,7 +699,7 @@ body {
   .main-content2 > img {
     position: absolute;
     top: calc(-21vh + 2px);
-    left: 10vh;
+    left: 7vh;
     /* bottom: -20vh; */
   }
   .gauge2 {
@@ -697,8 +710,9 @@ body {
     align-items: end;
     justify-content: space-around;
     position: relative;
-    left: 2vh;
+    left: 0vh;
     bottom: 20vh;
+    max-width: 50%;
   }
 
   .item-b small {
